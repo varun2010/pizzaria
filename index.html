@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizzaria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#">Pizzaria</a>
+        <div class="topnav-right">
+         <a href="#viewblock">View Menu</a>
+         <a href="#addTopings">Add Menu</a>
+        </div>
+    </div>
+
+    <div class="row" id="viewblock">
+        <div  class="img_div"> 
+            <img class="img-responsive"  src="pizza.png">
+        </div>
+        <div class="menu_div">
+            <button onclick="getmenu()" style="background-color: rgb(0, 255, 221); font-size:60px;color: blueviolet;border-radius: 10px;margin-top: 150px;">Show Menu</button>
+            <div id="display_menu">
+                <ol class="list" style="color: darkorange;font-size: 40px;">
+                    <li>Chicken Tandori Pizza</li>
+                    <li>Duluxe Veggie Pizza</li>
+                    <li>Extra Cheesy Pizza</li>
+                    <li>Hot and Spicy Pizza</li>
+                    <li>Paneer Tikka Pizza</li>
+                    <li>Tasty Mushroom Pizza</li>
+                </ol>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="newRow" id="addTopings">
+        <div class="block1">
+            <input id="add_item" placeholder="Type here to add toppings?"/></br>
+            <button id="add_toppings" onclick="add_item()" >Recommend a new Pizza</button>
+        </div>
+        <div class="block2" style="font-family: Roboto, sans-serif;">
+            <div id="display_addmenu">
+                <span style="background-color: darkgoldenrod;padding-top: 40px;padding-bottom: 30px;padding-right: 5px;">
+                    <span>
+                        <img style="background-color: rgb(0, 255, 242);margin-bottom: 15px;" height="100" src="pizzaImg.png">
+                    </span>
+                    <span style="font-size: 35px;">
+                        Chicken Tandori Pizza
+                    </span>
+                </span>
+                &nbsp;&nbsp;&nbsp;
+                <span style="background-color: darkgoldenrod;padding-top: 40px;padding-bottom: 30px;padding-right: 5px;">
+                    <span>
+                        <img style="background-color: rgb(0, 255, 242);margin-bottom: 15px;" height="100" src="pizzaImg.png">
+                    </span>
+                    <span style="font-size: 35px;">
+                        Duluxe Veggie Pizza
+                    </span>
+                </span>
+                &nbsp;&nbsp;&nbsp;
+                <span style="background-color: darkgoldenrod;padding-top: 40px;padding-bottom: 30px;padding-right: 5px;">
+                    <span>
+                        <img style="background-color: rgb(0, 255, 242);margin-bottom: 15px;" height="100" src="pizzaImg.png">
+                    </span>
+                    <span style="font-size: 35px;">
+                        Extra Cheesy Pizza
+                    </span>
+                </span>
+            
+                &nbsp;&nbsp;&nbsp;
+            
+                <span style="background-color: darkgoldenrod;padding-top: 40px;padding-bottom: 30px;padding-right: 5px;">
+                    <span>
+                        <img style="background-color: rgb(0, 255, 242);margin-bottom: 15px;" height="100" src="pizzaImg.png">
+                    </span>
+                    <span style="font-size: 35px;">
+                        Hot and Spicy Pizza
+                    </span>
+                </span>
+                &nbsp;&nbsp;&nbsp;
+                <span style="background-color: darkgoldenrod;padding-top: 40px;padding-bottom: 30px;padding-right: 5px;">
+                    <span>
+                        <img style="background-color: rgb(0, 255, 242);margin-bottom: 15px;" height="100" src="pizzaImg.png">
+                    </span>
+                    <span style="font-size: 35px;">
+                        Paneer Tikka Pizza
+                    </span>
+                </span>
+                &nbsp;&nbsp;&nbsp;
+                <span style="background-color: darkgoldenrod;padding-top: 40px;padding-bottom: 30px;padding-right: 5px;">
+                    <span>
+                        <img style="background-color: rgb(0, 255, 242);margin-bottom: 15px;" height="100" src="pizzaImg.png">
+                    </span>
+                    <span style="font-size: 35px;">
+                        Tasty Mushroom Pizza
+                    </span>
+                </span>
+            </div>
+        </div>
+    <div>
+    
+    </div>
+    <div>
+        <img class="img-responsive"  src="topping.png">
+    </div>
+
+</body>
+</html>
